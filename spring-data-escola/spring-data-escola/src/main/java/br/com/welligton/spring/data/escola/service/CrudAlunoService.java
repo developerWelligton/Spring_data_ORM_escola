@@ -65,7 +65,10 @@ public class CrudAlunoService {
 		System.out.println("DIGITE A MATRICULA ");
 		String matricula = scanner.next();
 		
-		 System.out.println("DIGITE A TURMA-ID DO ALUNO");
+		 System.out.println("TURMA-ID DO ALUNO DISPONÍVEIS");
+		 Iterable<Turma> turmas = turmaRepository.findAll();
+		 turmas.forEach(turma -> System.out.println(turma));
+		 System.out.println("DIGITE O ID");
 	     Integer turmaId = scanner.nextInt();
 	     Optional<Turma> turma= turmaRepository.findById(turmaId);
 		 

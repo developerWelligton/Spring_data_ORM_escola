@@ -63,10 +63,7 @@ public class CrudTurmaService {
 		
 		turmaRepository.save(turma);
 		
-		System.out.println("turma salva!");
-		
-		 
-		
+		System.out.println("turma salva!"); 
 		
 	}
 	

@@ -2,11 +2,12 @@ package br.com.welligton.spring.data.escola.orm;
 
 import java.util.List;
 
-import javax.persistence.Entity; 
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id; 
 import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
  
  
@@ -23,6 +24,18 @@ public class Turma {
 	 
 	@OneToMany(mappedBy = "turma")
 	private List<Aluno> alunos;
+	
+
+	@OneToOne (mappedBy = "turma")
+	private Professor professor;	
+	 
+	
+	public Professor getProfessor() {
+		return professor;
+	}
+	public void setProfessor(Professor professor) {
+		this.professor = professor;
+	}
 	
 	public Integer getId() {
 		return id;
