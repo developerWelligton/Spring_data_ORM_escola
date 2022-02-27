@@ -31,7 +31,10 @@ build/
 
 ### VS Code ###
 .vscode/
+<<<<<<< HEAD
 /.gitignore
 /mvnw
 /mvnw.cmd
 /pom.xml
+=======
+>>>>>>> branch 'main' of https://github.com/developerWelligton/Spring_data_ORM_escola.git

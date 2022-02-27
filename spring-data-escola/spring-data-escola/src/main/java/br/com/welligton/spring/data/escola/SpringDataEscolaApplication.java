@@ -1,5 +1,6 @@
 package br.com.welligton.spring.data.escola;
 
+<<<<<<< HEAD
 import java.util.Scanner;
 
 import org.springframework.boot.CommandLineRunner;
@@ -65,3 +66,16 @@ como cadastrar aluno vinculada com sua turma
 cadastrar turma!
  
 */
+=======
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class SpringDataEscolaApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(SpringDataEscolaApplication.class, args);
+	}
+
+}
+>>>>>>> branch 'main' of https://github.com/developerWelligton/Spring_data_ORM_escola.git
